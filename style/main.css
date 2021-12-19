@@ -10828,7 +10828,7 @@ nav .tulisan {
 }
 
 header .hero {
-  background-image: url("/images/black-tea.png");
+  background-image: url("../hero.jpg");
   background-size: cover;
   height: 500px;
 }
