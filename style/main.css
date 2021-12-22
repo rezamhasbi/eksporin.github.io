@@ -10884,12 +10884,7 @@ body {
   color: #0f514a;
 }
 
-.product-supplier img {
-  height: 200px;
-  width: 200px;
-}
-
-.product-supplier img .star-rating img {
+.product-supplier .star-rating img {
   height: 10px;
   width: 10px;
 }

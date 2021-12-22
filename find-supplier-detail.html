@@ -13,7 +13,7 @@
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link href="style/main.css" rel="stylesheet" />
-    <base href="https://rezamhasbi.github.io/eksporin.github.io/">
+    <base href="https://rezamhasbi.github.io/eksporin.github.io/find-supplier-detail.html">
   </head>
 
   <body>
@@ -61,59 +61,98 @@
     </div>
 
     <section class="product-supplier">
+
+      <nav>
         <div class="container">
-            <nav>
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item">Products Supplier</li>
-                  <li class="breadcrumb-item active">Details</li>
-                </ol>
-            </nav>
-            <div class="row">
-                <div class="col-lg-3 col-sm-12 mt-4">
-                    <img src="images/white-tea.png" class="rounded float-left" alt="...">
-                </div>
-                <div class="col-lg-6 col-sm-12">
-                    <table class="table table-borderless">
-                        <tr>
-                            <td>Product Name</td>
-                            <td class="text-left">Green Tea</td>
-                        </tr>
-                        <tr>
-                            <td>Price</td>
-                            <td class="text-left">$103.5 / kilo</td>
-                        </tr>
-                        <tr>
-                            <td>Rating</td>
-                            <td class="text-left">
-                                <img src="images/Star 5.png" style="width: 20px; height: 20px;" alt="">
-                                <img src="images/Star 5.png" style="width: 20px; height: 20px;" alt="">
-                                <img src="images/Star 5.png" style="width: 20px; height: 20px;" alt="">
-                                <img src="images/Star 5.png" style="width: 20px; height: 20px;" alt="">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Description</td>
-                            <td class="text-left">A brewed green tea is typically green, yellow or light brown in color, and its flavor profile can range from grass-like and toasted (pan fired) to vegetal, sweet and seaweed-like (steamed). If brewed correctly, most green tea should be quite light in color and only mildly astringent.</td>
-                        </tr>
-                    </table>
-
-                </div>
-                <div class="col-12">
-                    <hr style="border: 2px solid #61A377;">
-                </div>
-                <div class="col-12">
-                    <h6>Note : Please Screen this page and send to whatsapp, if you want to order</h6>
-                </div>
-                <div class="col-12 mt-3 mb-4">
-                    <a href="https://wa.wizard.id/c94397" class="btn"> 
-                    <img src="images/btn-contactme.png" style="height: auto;" alt=""> </a>
-                </div>
-                
-
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">Products Supplier</li>
+            <li class="breadcrumb-item active">Details</li>
+          </ol>
+        </div>
+      </nav>
+      <!--  -->
+      <section  id="gallery">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8" data-aos="zoom-in">
+              <transition name="slide-fade" mode="out-in">
+                <img
+                  :src="photos[activePhoto].url"
+                  :key="photos[activePhoto].url"
+                  class="w-100 main-image"
+                  alt=""
+                  style="height:600px;"
+                />
+              </transition>
             </div>
+            <div class="col-lg-2">
+              <div class="row">
+                <div
+                  class="col-3 col-lg-12 mt-2"
+                  v-for="(photo, index) in photos"
+                  :key="photo.id"
+                  data-aos="zoom-in"
+                  data-aos-delay="100"
+                >
+                  <a href="#" @click="changeActive(index)">
+                    <img
+                      :src="photo.url"
+                      class="w-100 thumbnail-image product-supplier-detail"
+                      :class="{active: index==activePhoto}"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  -->
+      <div class="row">
+      <div class="container">
+          <div class="col-lg-3 col-sm-12">
+              <table class="table table-borderless">
+                  <tr>
+                      <td>Product Name</td>
+                      <td class="text-left">Green Tea</td>
+                  </tr>
+                  <tr>
+                      <td>Price</td>
+                      <td class="text-left">$103.5 / kilo</td>
+                  </tr>
+                  <tr>
+                      <td>Rating</td>
+                      <td class="text-left">
+                          <img src="images/Star 5.png" style="width: 20px; height: 20px;" alt="">
+                          <img src="images/Star 5.png" style="width: 20px; height: 20px;" alt="">
+                          <img src="images/Star 5.png" style="width: 20px; height: 20px;" alt="">
+                          <img src="images/Star 5.png" style="width: 20px; height: 20px;" alt="">
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>Description</td>
+                      <td class="text-left">A brewed green tea is typically green, yellow or light brown in color, and its flavor profile can range from grass-like and toasted (pan fired) to vegetal, sweet and seaweed-like (steamed). If brewed correctly, most green tea should be quite light in color and only mildly astringent.</td>
+                  </tr>
+              </table>
+
+          </div>
+          <div class="col-12">
+              <hr style="border: 2px solid #61A377;">
+          </div>
+          <div class="col-12">
+              <h6>Note : Please Screen this page and send to whatsapp, if you want to order</h6>
+          </div>
+          <div class="col-12 mt-3 mb-4">
+              <a href="https://wa.wizard.id/c94397" class="btn"> 
+              <img src="images/btn-contactme.png" style="height: auto;" alt=""> </a>
+          </div>
+          
+        </div>
+      </div>
 
             
-        </div>
+        
     </section>
 
 
@@ -127,11 +166,46 @@
     </footer>
   </div>
     <!-- Bootstrap core JavaScript -->
-    <script src="/vendor/jquery/jquery.slim.min.js"></script>
-    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery/jquery.slim.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script src="vendor/vue/vue.js"></script>
+    <script>
+      var gallery = new Vue({
+        el: "#gallery",
+        mounted(){
+          AOS.init();
+        },
+        data:{
+          activePhoto:1,
+          photos:[
+            {
+              id:1,
+              url:"images/white-tea.png"
+            },
+            {
+              id:2,
+              url:"images/white-tea.png"
+            },
+            {
+              id:3,
+              url:"images/white-tea.png"
+            },
+            {
+              id:4,
+              url:"images/white-tea.png"
+            },
+          ],
+        },
+        methods:{
+          changeActive(id){
+            this.activePhoto=id;
+          }
+        }
+      });
     </script>
   </body>
 
