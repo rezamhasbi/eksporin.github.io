@@ -1,3 +1,8 @@
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 nav {
   img {
     min-height: 50px;
@@ -46,6 +51,10 @@ body {
       color: #0f514a;
     }
   }
+  .price-color{
+    color:orange;
+    font-weight: bold;
+  }
 }
 .new-product img {
   height: 200px;
@@ -57,6 +66,14 @@ body {
 }
 
 .product-supplier {
+  .price-color{
+    color:orange;
+    font-weight: bold;
+  }
+  img {
+    height: 200px;
+    width: 200px;
+  }
   h3 {
     a {
       color: #0f514a;
@@ -65,6 +82,13 @@ body {
 }
 
 .product-buyer {
+  .card{
+    min-height: 300px;
+  }
+  img{
+    width: 45px;
+    height: 30px;
+  }
   h3 {
     a {
       color: #0f514a;
@@ -72,6 +96,11 @@ body {
   }
 }
 .product-supplier {
+  .img-product-supplier img {
+    height: 200px;
+    width: 200px;
+  }
+
   .star-rating img {
     height: 10px;
     width: 10px;
