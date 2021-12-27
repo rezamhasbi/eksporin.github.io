@@ -10892,6 +10892,11 @@ body {
   font-weight: bold;
 }
 
+.product-supplier .img-sub {
+  width: 80px;
+  height: 80px;
+}
+
 .product-supplier img {
   height: 200px;
   width: 200px;
