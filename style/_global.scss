@@ -51,8 +51,8 @@ body {
       color: #0f514a;
     }
   }
-  .price-color{
-    color:orange;
+  .price-color {
+    color: orange;
     font-weight: bold;
   }
 }
@@ -66,13 +66,13 @@ body {
 }
 
 .product-supplier {
-  .price-color{
-    color:orange;
+  .price-color {
+    color: orange;
     font-weight: bold;
   }
-  .img-sub{
+  .img-sub {
     width: 80px;
-    height:80px;
+    height: 80px;
   }
   img {
     height: 200px;
@@ -86,10 +86,10 @@ body {
 }
 
 .product-buyer {
-  .card{
+  .card {
     min-height: 300px;
   }
-  img{
+  img {
     width: 45px;
     height: 30px;
   }
@@ -173,6 +173,15 @@ body {
   }
   .caption {
     margin-top: 40px;
+  }
+}
+
+// find your buyyer
+
+.find-your-buyer {
+  .flag-buyer {
+    width: 45px;
+    height: 30px;
   }
 }
 
