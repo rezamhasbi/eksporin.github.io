@@ -52,7 +52,7 @@ body {
     text-decoration: none;
     transition: all 0.2s ease-in-out;
   }
-  .link-supplier &:hover{
+  .link-supplier &:hover {
     transform: scale(1.05);
   }
 
@@ -76,6 +76,14 @@ body {
 }
 
 .product-supplier {
+  .link-supplier {
+    color: #0f514a;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+  .link-supplier &:hover {
+    transform: scale(1.05);
+  }
   .price-color {
     color: orange;
     font-weight: bold;
@@ -96,6 +104,14 @@ body {
 }
 
 .product-buyer {
+  .link-buyer {
+    color: #0f514a;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+  .link-buyer &:hover {
+    transform: scale(1.05);
+  }
   .card {
     min-height: 300px;
   }
@@ -192,6 +208,14 @@ body {
   .flag-buyer {
     width: 45px;
     height: 30px;
+  }
+  .link-buyer {
+    color: #0f514a;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+  .link-buyer &:hover {
+    transform: scale(1.05);
   }
 }
 

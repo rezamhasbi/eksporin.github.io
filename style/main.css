@@ -10899,6 +10899,18 @@ body {
   font-size: 16px;
 }
 
+.product-supplier .link-supplier {
+  color: #0f514a;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.link-supplier .product-supplier:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 .product-supplier .price-color {
   color: orange;
   font-weight: bold;
@@ -10916,6 +10928,18 @@ body {
 
 .product-supplier h3 a {
   color: #0f514a;
+}
+
+.product-buyer .link-buyer {
+  color: #0f514a;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.link-buyer .product-buyer:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .product-buyer .card {
@@ -11014,6 +11038,18 @@ body {
 .find-your-buyer .flag-buyer {
   width: 45px;
   height: 30px;
+}
+
+.find-your-buyer .link-buyer {
+  color: #0f514a;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.link-buyer .find-your-buyer:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 footer {
