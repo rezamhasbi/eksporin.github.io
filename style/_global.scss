@@ -11,6 +11,7 @@ nav {
     margin-left: 10px;
   }
 }
+
 header {
   .hero {
     background-image: url("../hero.jpg");
@@ -46,6 +47,15 @@ body {
   color: #0f514a;
 }
 .new-product {
+  .link-supplier {
+    color: #0f514a;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+  .link-supplier &:hover{
+    transform: scale(1.05);
+  }
+
   h3 {
     a {
       color: #0f514a;

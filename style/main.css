@@ -10869,6 +10869,18 @@ body {
   color: #0f514a;
 }
 
+.new-product .link-supplier {
+  color: #0f514a;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.link-supplier .new-product:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 .new-product h3 a {
   color: #0f514a;
 }
